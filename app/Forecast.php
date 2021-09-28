@@ -24,7 +24,7 @@ class Forecast
     {
         if ($this->object !== null)
         {
-            $currentHour = date('H', time());
+            $currentHour = (int)date('H', time());
             $forecastDay = 0;
             $result = [];
             for ($i = 1; $i <= 4; $i++)
